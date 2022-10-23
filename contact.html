@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neouranos | Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Javascript -->
+    <script src="src/scripts/main.js" defer></script>
+    <script src="src/scripts/email.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- NAV -->
+      <div class="nav container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">Neouranos</a>
+        <!-- NAVBAR-->
+        <ul class="navbar">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Menu Icon -->
+        <div class="menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+    <!-- CONTACT -->
+    <section class="contact container" id="contact">
+      <!-- HEADING -->
+      <h2 class="heading">Contact</h2>
+      <!-- FORM -->
+      <form action="" class="contact-form" id="contact-form">
+        <input type="text" placeholder="Your Name" class="name" required />
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Email address..."
+          class="email"
+          required
+        />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Write message here..."
+          class="message"
+          style="resize: none"
+          required
+        ></textarea>
+        <div>
+          <input type="submit" value="submit" class="submit-btn" />
+          <input type="reset" value="reset" class="reset-btn" />
+        </div>
+      </form>
+    </section>
+    <section class="footer container" id="footer">
+      <p>Made with <i class="bx bx-heart"></i> by Neouranos</p>
+    </section>
+    <!-- EMAIL JS -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("hide");
+      })();
+    </script>
+  </body>
+</html>

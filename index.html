@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neouranos | Homepage</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Javascript -->
+    <script src="src/scripts/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- NAV -->
+      <div class="nav container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">Neouranos</a>
+        <!-- NAVBAR-->
+        <ul class="navbar">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Menu Icon -->
+        <div class="menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+    <section class="home container" id="home">
+      <div class="home-content">
+        <div class="home-text">
+          <h3>Hello</h3>
+          <h2>I'm <span class="color">Neouranos</span></h2>
+          <!-- TYPING ANIMATION -->
+          <h4><span id="typed" class="typed-text"></span></h4>
+          <div class="social">
+            <a href="https://github.com/neouranos" target="_blank">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ammarsufyan/" target="_blank">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about container" id="about">
+      <!-- CONTENT -->
+        <div class="about-text">
+          <p>My real name is <strong>Ammar Sufyan</strong>. <br>
+            I'm currently an Informatics Engineering student at UIN Jakarta. 
+            <br>I
+            like to code on some side project on my free time.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="footer container" id="footer">
+      <p>Made with <i class="bx bx-heart"></i> by Neouranos</p>
+    </section>
+    <script>
+      new Typed("#typed", {
+        strings: ["Front End Developer", "Back End Developer"],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
