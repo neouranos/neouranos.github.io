@@ -20,6 +20,11 @@
   --bg-color: #fff;
 }
 
+body {
+  color: var(--bg-color);
+  background: var(--body-color);
+}
+
 html ::-webkit-scrollbar {
   width: 0.5rem;
   background: transparent;
