@@ -149,6 +149,22 @@ header {
   justify-content: center;
 }
 
+.home-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #98a7fc;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.home-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .home-text {
   display: flex;
   flex-direction: column;
@@ -267,7 +283,7 @@ header {
 .about-text p {
   font-size: 1rem;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 1.5rem;
 }
 
@@ -404,7 +420,7 @@ header {
 @media (max-width: 990px) {
   .container {
     margin: 0 auto;
-    width: 90;
+    width: 90%;
   }
 }
 
@@ -472,6 +488,7 @@ header {
   }
   .nav-link {
     display: block;
+    margin: 1rem 0;
   }
 }
 
